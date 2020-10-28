@@ -1,0 +1,42 @@
+a { 
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+img { 
+  display: block;
+  width: 100%;
+}
+
+* { 
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+:root {
+  --brand-color: #007bff;
+  --primary-color: #007bff;
+  --white: #fff;
+  --sm: .75rem;
+  --md: .875rem;
+  --rem: 1rem;
+  --lg: 1.125rem;
+  --xl: 2.875rem;
+
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-xl: 1000px;
+}
+
+.logo {
+  color: var(--brand-color);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: var(--xl);
+}

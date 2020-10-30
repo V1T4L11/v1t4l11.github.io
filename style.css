@@ -27,16 +27,44 @@ body {
   --sm: .75rem;
   --md: .875rem;
   --rem: 1rem;
-  --lg: 1.125rem;
-  --xl: 2.875rem;
+  --lg: 2.5rem;
+  --xl: 3.2rem;
 
   --breakpoint-sm: 480px;
   --breakpoint-md: 768px;
   --breakpoint-xl: 1000px;
 }
 
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.header {
+  border-bottom: 1px solid var(--brand-color);
+}
+
 .logo {
+  text-align: center;
   color: var(--brand-color);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: var(--xl);
+  font-size: var(--lg);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: var(--breakpoint-md);
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .container {
+    width: var(--breakpoint-xl);
+  }
+
+  .logo {
+    font-size: var(--xl);
+  }
 }

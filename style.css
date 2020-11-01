@@ -9,8 +9,13 @@
   --xl: 3.2rem;
 
   --breakpoint-sm: 480px;
-  --breakpoint-md: 768px;
+  --breakpoint-md: 758px;
   --breakpoint-xl: 1000px;
+}
+
+* { 
+  outline: none;
+  box-sizing: border-box;
 }
 
 a { 
@@ -28,11 +33,6 @@ img {
 svg {
   width: 100%;
   height: 100%;
-}
-
-* { 
-  outline: none;
-  box-sizing: border-box;
 }
 
 body {
@@ -59,7 +59,7 @@ body {
   margin: 0;
 }
 
-.contacts__inner {
+.contacts__link {
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -88,6 +88,12 @@ body {
 @media (min-width: 768px) {
   .container {
     width: var(--breakpoint-md);
+  }
+
+  .contacts {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
   }
 }
 

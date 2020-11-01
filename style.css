@@ -1,12 +1,33 @@
+:root {
+  --brand-color: #007bff;
+  --primary-color: #343a40;
+  --white: #fff;
+  --sm: .75rem;
+  --md: .875rem;
+  --rem: 1rem;
+  --lg: 2.5rem;
+  --xl: 3.2rem;
+
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-xl: 1000px;
+}
+
 a { 
   text-decoration: none;
   outline: none;
   cursor: pointer;
+  color: inherit;
 }
 
 img { 
   display: block;
   width: 100%;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
 }
 
 * { 
@@ -18,21 +39,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-}
-
-:root {
-  --brand-color: #007bff;
-  --primary-color: #007bff;
-  --white: #fff;
-  --sm: .75rem;
-  --md: .875rem;
-  --rem: 1rem;
-  --lg: 2.5rem;
-  --xl: 3.2rem;
-
-  --breakpoint-sm: 480px;
-  --breakpoint-md: 768px;
-  --breakpoint-xl: 1000px;
+  color: var(--primary-color);
 }
 
 .container {
@@ -49,6 +56,32 @@ body {
   color: var(--brand-color);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: var(--lg);
+  margin: 0;
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.contacts__social {
+  /* width: calc(100% / 2 - 20px); */
+  text-align: center;
+}
+
+.contacts__social-icon {
+  width: 100px;
+}
+
+.contacts__social-icon svg {
+  fill: var(--brand-color);
+}
+
+.contacts__social-text {
+  font-size: var(--rem);
+  font-weight: bold;
+  color: var(--brand-color);
   margin: 0;
 }
 

@@ -143,6 +143,11 @@ p {
     display: flex;
     gap: 50px;
   }
+
+  .article__item:nth-child(even) {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+  }
 }
 
 @media (min-width: 1200px) {

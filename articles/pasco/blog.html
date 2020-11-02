@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title></title><link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  </head>
+  <body>
+    <div class="svg-sprite"><?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 24 24" id="arrow-down" xmlns="http://www.w3.org/2000/svg"><path d="M0 7.33L2.829 4.5l9.175 9.339L21.171 4.5 24 7.33 12.004 19.5z" fill="#fff"/></symbol><symbol viewBox="0 0 24 24" id="arrow-left" xmlns="http://www.w3.org/2000/svg"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167L16.67 24 4.5 12.004z" fill="#fff"/></symbol><symbol viewBox="0 0 24 24" id="arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M5 3l3.057-3L20 12 8.057 24 5 21l9-9z" fill="#fff"/></symbol><symbol viewBox="0 0 24 24" id="basket" xmlns="http://www.w3.org/2000/svg"><path d="M10 19.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm3.5-1.5a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm1.336-5l1.977-7H0l2.938 7h11.898zm4.969-10l-3.432 12H3.776l.839 2h13.239l3.474-12h1.929L24 3h-4.195z" fill="#fff"/></symbol><symbol viewBox="0 0 24 24" id="behance" xmlns="http://www.w3.org/2000/svg"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988H0V5.021h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zM3 11h3.584c2.508 0 2.906-3-.312-3H3v3zm3.391 3H3v3.016h3.341c3.055 0 2.868-3.016.05-3.016z" fill="#fff"/></symbol><symbol viewBox="0 0 24 24" id="close" xmlns="http://www.w3.org/2000/svg"><path d="M23 20.168l-8.185-8.187L23 3.807 20.168 1l-8.182 8.179L3.81 1 1 3.81l8.186 8.196L1 20.19 3.81 23l8.203-8.192L20.193 23z" fill="#fff"/></symbol><symbol viewBox="0 0 24 24" id="dribbble" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.372 0 0 5.373 0 12s5.372 12 12 12 12-5.373 12-12S18.628 0 12 0zm9.885 11.441c-2.575-.422-4.943-.445-7.103-.073a42.153 42.153 0 00-.767-1.68c2.31-1 4.165-2.358 5.548-4.082a9.863 9.863 0 012.322 5.835zm-3.842-7.282c-1.205 1.554-2.868 2.783-4.986 3.68a46.287 46.287 0 00-3.488-5.438A9.894 9.894 0 0112 2.087c2.275 0 4.368.779 6.043 2.072zM7.527 3.166a44.59 44.59 0 013.537 5.381c-2.43.715-5.331 1.082-8.684 1.105a9.931 9.931 0 015.147-6.486zM2.087 12l.013-.256c3.849-.005 7.169-.448 9.95-1.322.233.475.456.952.67 1.432-3.38 1.057-6.165 3.222-8.337 6.48A9.865 9.865 0 012.087 12zm3.829 7.81c1.969-3.088 4.482-5.098 7.598-6.027a39.137 39.137 0 012.043 7.46c-3.349 1.291-6.953.666-9.641-1.433zm11.586.43a41.098 41.098 0 00-1.92-6.897c1.876-.265 3.94-.196 6.199.196a9.923 9.923 0 01-4.279 6.701z" fill="#fff"/></symbol><symbol viewBox="0 0 24 24" id="facebook" xmlns="http://www.w3.org/2000/svg"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z" fill="#fff"/></symbol><symbol fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="globe" xmlns="http://www.w3.org/2000/svg"><path d="M12.02 0C18.634.011 24 5.383 24 12c0 6.623-5.376 12-12 12-6.623 0-12-5.377-12-12C0 5.383 5.367.011 11.981 0h.039zm3.694 16H8.287c.639 4.266 2.242 7 3.713 7 1.472 0 3.075-2.734 3.714-7m6.535 0h-5.523c-.426 2.985-1.321 5.402-2.485 6.771A11.025 11.025 0 0022.249 16M7.275 16H1.751a11.029 11.029 0 008.009 6.771C8.596 21.402 7.701 18.985 7.275 16m-.123-7H1.416a11.043 11.043 0 000 6h5.736a29.82 29.82 0 010-6m8.691 0H8.158a28.617 28.617 0 000 6h7.685a28.62 28.62 0 000-6m6.742 0h-5.736c.062.592.308 3.019 0 6h5.736a11.042 11.042 0 000-6M9.76 1.229A11.029 11.029 0 001.751 8h5.524c.426-2.985 1.321-5.403 2.485-6.771M15.714 8C15.075 3.734 13.472 1 12 1c-1.471 0-3.074 2.734-3.713 7h7.427zm-1.473-6.771C15.405 2.597 16.3 5.015 16.726 8h5.523a11.025 11.025 0 00-8.008-6.771" fill="#fff"/></symbol><symbol viewBox="0 0 24 24" id="instagram" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" fill="#fff"/></symbol><symbol viewBox="0 0 24 24" id="lens" xmlns="http://www.w3.org/2000/svg"><path d="M21.172 24l-7.387-7.387A8.945 8.945 0 019 18c-4.971 0-9-4.029-9-9s4.029-9 9-9 9 4.029 9 9a8.951 8.951 0 01-1.387 4.785L24 21.172 21.172 24zM9 16c3.859 0 7-3.14 7-7s-3.141-7-7-7-7 3.14-7 7 3.141 7 7 7z" fill="#fff"/></symbol><symbol viewBox="0 0 24 24" id="likes" xmlns="http://www.w3.org/2000/svg"><path d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021C19.784 3.01 22 4.319 22 7.192c0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13C2 4.516 3.965 2.999 6.28 3zm.001-2C3.098 1 0 3.187 0 7.192 0 11.853 5.57 16.619 12 23c6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238C10.715 2.042 8.478 1 6.281 1z" fill="#fff"/></symbol><symbol fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24" id="menu" xmlns="http://www.w3.org/2000/svg"><path d="M24 18v1H0v-1h24zm0-6v1H0v-1h24zm0-6v1H0V6h24z" fill="#1040e2"/><path d="M24 19H0v-1h24v1zm0-6H0v-1h24v1zm0-6H0V6h24v1z" fill="#fff"/></symbol><symbol viewBox="0 0 24 24" id="pinterest" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" fill-rule="evenodd" clip-rule="evenodd" fill="#fff"/></symbol><symbol viewBox="0 0 24 24" id="plus" xmlns="http://www.w3.org/2000/svg"><path d="M24 10H14V0h-4v10H0v4h10v10h4V14h10z" fill="#fff"/></symbol><symbol viewBox="0 0 24 24" id="signin" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm7.753 18.305c-.261-.586-.789-.991-1.871-1.241-2.293-.529-4.428-.993-3.393-2.945C17.634 8.177 15.322 5 12 5c-3.388 0-5.644 3.299-2.489 9.119 1.066 1.964-1.148 2.427-3.393 2.945-1.084.25-1.608.658-1.867 1.246A9.954 9.954 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10a9.956 9.956 0 01-2.247 6.305z" fill="#fff"/></symbol><symbol viewBox="0 0 24 24" id="twitter" xmlns="http://www.w3.org/2000/svg"><path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z" fill="#fff"/></symbol></svg></div>
+    <div class="topbar">
+      <div class="topbar__item">
+        <div class="socials topbar__socials"><a class="socials__item socials__item--facebook" href="http://#">
+                <svg class="icon icon-facebook socials-icon">
+                  <use xlink:href="img/svg/sprite.svg#facebook"></use>
+                </svg></a><a class="socials__item socials__item--twitter" href="http://#">
+                <svg class="icon icon-twitter socials-icon">
+                  <use xlink:href="img/svg/sprite.svg#twitter"></use>
+                </svg></a><a class="socials__item socials__item--pinterest" href="http://#">
+                <svg class="icon icon-pinterest socials-icon">
+                  <use xlink:href="img/svg/sprite.svg#pinterest"></use>
+                </svg></a><a class="socials__item socials__item--behance" href="http://#">
+                <svg class="icon icon-behance socials-icon">
+                  <use xlink:href="img/svg/sprite.svg#behance"></use>
+                </svg></a><a class="socials__item socials__item--dribbble" href="http://#">
+                <svg class="icon icon-dribbble socials-icon">
+                  <use xlink:href="img/svg/sprite.svg#dribbble"></use>
+                </svg></a><a class="socials__item socials__item--instagram" href="http://#">
+                <svg class="icon icon-instagram socials-icon">
+                  <use xlink:href="img/svg/sprite.svg#instagram"></use>
+                </svg></a></div>
+        <div class="user">
+          <div class="lang topbar__lang">
+                <svg class="icon icon-globe globe__icon">
+                  <use xlink:href="img/svg/sprite.svg#globe"></use>
+                </svg>
+            <select class="lang__select" id="language" name="lang">
+              <option class="lang__item" value="eng">ENG</option>
+              <option class="lang__item" value="ua">UA</option>
+            </select>
+          </div>
+          <button class="signin topbar__signin btn">
+                <svg class="icon icon-signin signin__icon">
+                  <use xlink:href="img/svg/sprite.svg#signin"></use>
+                </svg>
+            <p>SIGN-IN</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__item">
+        <nav class="main-menu" id="mainMenu">
+          <ul class="main-menu__items"><a class="closebtn" href="#" onclick="closeNav()">
+                  <svg class="icon icon-close icon-xl">
+                    <use xlink:href="img/svg/sprite.svg#close"></use>
+                  </svg></a>
+            <li><a class="main-menu__item" href="http://localhost:3000/index.html">home</a></li>
+            <li><a class="main-menu__item" href="http://localhost:3000/portfolio.html">portfolio</a></li>
+            <li><a class="main-menu__item" href="http://localhost:3000/blog.html">blog</a></li>
+            <li><a class="main-menu__item has-drop" href="http://#">pages
+                    <svg class="icon icon-plus icon-drop">
+                      <use xlink:href="img/svg/sprite.svg#plus"></use>
+                    </svg></a>
+              <ul class="dropdown__content">
+                <li><a class="main-menu__item dropdown__item" href="http://#">Service</a></li>
+                <li><a class="main-menu__item dropdown__item" href="http://#">FAQ</a></li>
+                <li><a class="main-menu__item dropdown__item" href="http://#">About</a></li>
+              </ul>
+            </li>
+            <li><a class="main-menu__item" href="http://#">shop</a></li>
+            <li><a class="main-menu__item" href="http://localhost:3000/contact.html">contact</a></li>
+          </ul>
+        </nav><a class="btn__menu topbar__menu" onclick="openNav()">
+              <svg class="icon icon-menu icon-xl">
+                <use xlink:href="img/svg/sprite.svg#menu"></use>
+              </svg></a>
+        <h1 class="logo">pasco</h1>
+        <div class="user-choise">
+          <div class="header__search">
+                <svg class="icon icon-lens icon-xl">
+                  <use xlink:href="img/svg/sprite.svg#lens"></use>
+                </svg>
+          </div>
+          <div class="likes">
+                <svg class="icon icon-likes icon-xl">
+                  <use xlink:href="img/svg/sprite.svg#likes"></use>
+                </svg>
+          </div>
+          <div class="basket">
+                <svg class="icon icon-basket icon-xl">
+                  <use xlink:href="img/svg/sprite.svg#basket"></use>
+                </svg>
+            <div class="has-badge has-badge--basket"><span class="basket__num">7</span></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <sort class="sort">
+      <div class="sort__inner">
+        <div class="sort__select">
+          <select class="sort-select" id="sort-select" name="sort-select">
+            <option class="sort-select__item" value="sort">Sort</option>
+            <option class="sort-select__item" value="photography">Photography</option>
+            <option class="sort-select__item" value="lifestyle">Lifestyle</option>
+            <option class="sort-select__item" value="trip">Trip</option>
+            <option class="sort-select__item" value="inspiration">Inspiration</option>
+          </select>
+        </div>
+        <div class="sort__radios">
+          <div class="custom-radios">
+            <div class="custom-radios__item">
+              <input type="radio" name="sort" id="all" checked>
+              <label for="all">All</label>
+            </div>
+            <div class="custom-radios__item">
+              <input type="radio" name="sort" id="photography" checked>
+              <label for="photography">Photography</label>
+            </div>
+            <div class="custom-radios__item">
+              <input type="radio" name="sort" id="lifestyle" checked>
+              <label for="lifestyle">Lifestyle</label>
+            </div>
+            <div class="custom-radios__item">
+              <input type="radio" name="sort" id="trip" checked>
+              <label for="trip">Trip</label>
+            </div>
+            <div class="custom-radios__item">
+              <input type="radio" name="sort" id="inspiration" checked>
+              <label for="inspiration">Inspiration</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sort>
+    <main class="main">
+      <div class="main__inner">
+        <div class="main-content content">
+          <article class="article">
+            <div class="article__inner">
+              <div class="article__inner--col-img"><img class="article__img" srcset="img/articles-5.jpg" alt="article__img">
+                <p class="article__categories">#inspiration</p>
+              </div>
+              <div class="article__inner--col-text">
+                <div class="article__text">
+                  <h2 class="article__text--title">Food that actually taste better when you freeze</h2>
+                  <p class="article__text--excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid inventore quod, similique explicabo sit maxime esse sunt, maiores ipsum quos voluptatem consectetur minus pariatur, cumque ea ducimus eligendi numquam obcaecati!</p>
+                </div>
+                <div class="article__footer article__author"><img class="article__author--img" srcset="img/articles-2-author.jpg" alt="james leman">
+                  <div class="article__author--name">James Leman</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article__inner">
+              <div class="article__inner--col-img"><img class="article__img" srcset="img/articles-6.jpg" alt="article__img">
+                <p class="article__categories">#trip</p>
+              </div>
+              <div class="article__inner--col-text">
+                <div class="article__text">
+                  <h2 class="article__text--title">Why it's amazing to date people who love traveling</h2>
+                  <p class="article__text--excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid inventore quod, similique explicabo sit maxime esse sunt, maiores ipsum quos voluptatem consectetur minus pariatur, cumque ea ducimus eligendi numquam obcaecati!</p>
+                </div>
+                <div class="article__footer article__author"><img class="article__author--img" srcset="img/articles-author-1.jpg" alt="benjamin miller leman">
+                  <div class="article__author--name">Benjamin Miller</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article__inner">
+              <div class="article__inner--col-img"><img class="article__img" srcset="img/articles-7.jpg" alt="article__img">
+                <p class="article__categories">#lifestyle</p>
+              </div>
+              <div class="article__inner--col-text">
+                <div class="article__text">
+                  <h2 class="article__text--title">5 useful tips for novice painters</h2>
+                  <p class="article__text--excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid inventore quod, similique explicabo sit maxime esse sunt, maiores ipsum quos voluptatem consectetur minus pariatur, cumque ea ducimus eligendi numquam obcaecati!</p>
+                </div>
+                <div class="article__footer article__author"><img class="article__author--img" srcset="img/articles-3-author.jpg" alt="Henry Little">
+                  <div class="article__author--name">Henry Little</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="article">
+            <div class="article__inner">
+              <div class="article__inner--col-img"><img class="article__img" srcset="img/articles-8.jpg" alt="article__img">
+                <p class="article__categories">#trip</p>
+              </div>
+              <div class="article__inner--col-text">
+                <div class="article__text">
+                  <h2 class="article__text--title">11 fantastic ways passionate</h2>
+                  <p class="article__text--excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid inventore quod, similique explicabo sit maxime esse sunt, maiores ipsum quos voluptatem consectetur minus pariatur, cumque ea ducimus eligendi numquam obcaecati!</p>
+                </div>
+                <div class="article__footer article__author"><img class="article__author--img" srcset="img/articles-2-author.jpg" alt="James Leman">
+                  <div class="article__author--name">James Leman</div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <div class="article__pic">
+            <article class="article article__pic--inner"><img class="article__img" srcset="img/articles-9.jpg" alt="article__img">
+              <p class="article__categories">#photography</p>
+            </article>
+            <article class="article article__pic--inner"><img class="article__img" srcset="img/articles-5.jpg" alt="article__img">
+              <p class="article__categories">#photography</p>
+            </article>
+          </div>
+          <div class="article__btn-control"><a class="btn-control btn-control--prev" href="http://#">Prev</a><a class="btn-control btn-control--next" href="http://#">More</a></div>
+        </div>
+        <aside class="main-aside aside">
+          <div class="aside__inner">
+            <div class="search">
+              <form class="search__aside">
+                <input class="search__aside-input" type="text" placeholder="Search...">
+                <button class="search__aside-btn" type="submit">
+                      <svg class="icon icon-lens icon-xl">
+                        <use xlink:href="img/svg/sprite.svg#lens"></use>
+                      </svg>
+                </button>
+              </form>
+            </div>
+            <form class="subscribe">
+              <h2 class="subscribe__title">SUBSCRIBE</h2>
+              <label class="subscribe__label" for="username">Name</label>
+              <input class="subscribe__input" type="text" name="username" placeholder="Igor Ten">
+              <label class="subscribe__label" for="email">E-mail</label>
+              <input class="subscribe__input" type="email" name="email" placeholder="email@adress.com">
+              <label class="subscribe__label" for="phone">Phone</label>
+              <input class="subscribe__input" type="tel" name="email" placeholder="+38012 345 67 89">
+              <input class="subscribe__submit" type="submit" value="subscribe">
+              <p class="subscribe__subtitle"><span class="subscribe__subtitle--text">or</span></p>
+              <div class="socials subscribe__socials"><a class="socials__item socials__item--facebook" href="http://#">
+                      <svg class="icon icon-facebook socials-icon">
+                        <use xlink:href="img/svg/sprite.svg#facebook"></use>
+                      </svg></a><a class="socials__item socials__item--twitter" href="http://#">
+                      <svg class="icon icon-twitter socials-icon">
+                        <use xlink:href="img/svg/sprite.svg#twitter"></use>
+                      </svg></a><a class="socials__item socials__item--pinterest" href="http://#">
+                      <svg class="icon icon-pinterest socials-icon">
+                        <use xlink:href="img/svg/sprite.svg#pinterest"></use>
+                      </svg></a><a class="socials__item socials__item--behance" href="http://#">
+                      <svg class="icon icon-behance socials-icon">
+                        <use xlink:href="img/svg/sprite.svg#behance"></use>
+                      </svg></a><a class="socials__item socials__item--dribbble" href="http://#">
+                      <svg class="icon icon-dribbble socials-icon">
+                        <use xlink:href="img/svg/sprite.svg#dribbble"></use>
+                      </svg></a><a class="socials__item socials__item--instagram" href="http://#">
+                      <svg class="icon icon-instagram socials-icon">
+                        <use xlink:href="img/svg/sprite.svg#instagram"></use>
+                      </svg></a></div>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+    <script src="js/siema.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

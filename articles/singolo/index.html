@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Singolo, Fusce, dapibus">
+    <meta name="description" content="Fusce dapibus, tellus ac cursus commodo.">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Singolo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header bg--dark">
+        <h1 class="header__logo"><a href="#">singolo<span class="text--brand">*</span></a></h1>
+        <button class="button__hamburger"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg></button>
+        <nav class="nav">
+            <div class="nav__hamburger">
+                <a class="nav__item" href="#">home</a>
+                <a class="nav__item" href="#">services</a>
+                <a class="nav__item" href="#">portfolio</a>
+                <a class="nav__item" href="#">about</a>
+                <a class="nav__item" href="#">contact</a>
+            </div>      <!--end nav hamburger-->
+        </nav>      <!--end nav-->
+    </header>   <!--end header-->
+
+    <div class="hero">
+        <img class="hero__img" src="images/hero.jpg" alt="hero slider">
+            <button class="hero__button hero__button--prev"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg></button>
+            <button class="hero__button hero__button--next"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg></button>
+    </div>    <!--end section hero-->
+
+    <div class="section services">
+        <h2 class="section__title">Our Services</h2>
+        <div class="section__subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
+        
+        <div class="services__wrap">
+            <div class="services__block">
+                <img class="services__icon" src="images/icon_pen.png" alt="icon custom design">
+                <div>
+                    <h3 class="section__name">Custom Design</h3>
+                    <p class="section__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                </div>
+            </div>
+
+            <div class="services__block">
+                <img class="services__icon" src="images/icon_lamp.png" alt="icon inovative ideas">
+                <div>
+                    <h3 class="section__name">Inovative Ideas</h3>
+                    <p class="section__text">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                </div>
+            </div>
+
+            <div class="services__block">
+                <img class="services__icon" src="images/icon_heart.png" alt="icon love is the answer">
+                <div>
+                    <h3 class="section__name">Love Is The Answer</h3>
+                    <p class="section__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                </div>
+            </div>
+
+            <div class="services__block">
+                <img class="services__icon" src="images/icon_phone.png" alt="icon responsive layout">
+                <div>
+                    <h3 class="section__name">Responsive Layout</h3>
+                    <p class="section__text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula. Praesent elit leo.</p>
+                </div>
+            </div>
+
+            <div class="services__block">
+                <img class="services__icon" src="images/icon_support.png" alt="icon 24/7 support">
+                <div>
+                    <h3 class="section__name">24 / 7 Support</h3>
+                    <p class="section__text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat. Pellentesque egestas venenatis lorem .</p>
+                </div>
+            </div>
+
+            <div class="services__block">
+                <img class="services__icon" src="images/icon_star.png" alt="icon feel like a star">
+                <div>
+                    <h3 class="section__name">Feel Like A Star</h3>
+                    <p class="section__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae.</p>
+                </div>
+            </div>
+        </div> <!--end grid services-->
+    </div>  <!--end section content-->
+
+    <div class="section portfolio bg--dark">
+        <h2 class="section__title">Portfolio</h2>
+    
+        <div class="section__subtitle">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</div>
+        
+        <div class="portfolio__filters filters">
+            <button class="filters__item">All</button>
+            <button class="filters__item">Web Design</button>
+            <button class="filters__item">Graphic Design</button>
+            <button class="filters__item">Artwork</button>
+        </div>  <!--end button portfolio-->
+        
+        <div class="gallery">
+            <a class="gallery__item" href="#"><img src="images/portfolio_1.jpg" alt="portfolio 1"></a>
+            <a class="gallery__item" href="#"><img src="images/portfolio_2.jpg" alt="portfolio 2"></a>
+            <a class="gallery__item" href="#"><img src="images/portfolio_3.jpg" alt="portfolio 3"></a>
+            <a class="gallery__item" href="#"><img src="images/portfolio_4.jpg" alt="portfolio 4"></a>
+            <a class="gallery__item" href="#"><img src="images/portfolio_5.jpg" alt="portfolio 5"></a>
+            <a class="gallery__item" href="#"><img src="images/portfolio_6.jpg" alt="portfolio 6"></a>
+            <a class="gallery__item" href="#"><img src="images/portfolio_7.jpg" alt="portfolio 7"></a>
+            <a class="gallery__item" href="#"><img src="images/portfolio_8.jpg" alt="portfolio 8"></a>
+            <a class="gallery__item" href="#"><img src="images/portfolio_9.jpg" alt="portfolio 9"></a>
+            <a class="gallery__item" href="#"><img src="images/portfolio_10.jpg" alt="portfolio 10"></a>
+            <a class="gallery__item" href="#"><img src="images/portfolio_11.jpg" alt="portfolio 11"></a>
+            <a class="gallery__item" href="#"><img src="images/portfolio_12.jpg" alt="portfolio 12"></a>
+        </div>  <!--end portfolio grid-->
+    </div>  <!--end section portfolio-->
+
+    <div class="section about">
+        <h2 class="section__title">About Us</h2>
+        
+        <div class="section__subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
+        
+        <div class="about__grid">
+            <div class="about__item">
+                <div class="about__photo">
+                    <img src="images/about_adam.jpg" alt="Adam Jensen">
+                </div>
+                <div class="about__text">
+                    <a class="about__name" href="#"><h3>Adam Jensen</h3></a>
+                    <p class="section__text">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem. Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                </div>    
+                <div class="social social--order">
+                        <a class="svg-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/></svg></a>
+                        <a class="svg-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.5 11.5v1.2h1.985c-.08.514-.601 1.51-1.985 1.51-1.194 0-2.17-.99-2.17-2.21s.976-2.21 2.17-2.21c.681 0 1.135.29 1.396.541l.949-.916c-.61-.57-1.401-.915-2.345-.915-1.936 0-3.5 1.565-3.5 3.5s1.564 3.5 3.5 3.5c2.02 0 3.359-1.419 3.359-3.419 0-.23-.024-.405-.055-.58h-3.304zm0 0 8.5 1h-1.5v1.5h-1v-1.5h-1.5v-1h1.5v-1.5h1v1.5h1.5v1z"/></svg></a>
+                        <a class="svg-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.5 8.778c-.441.196-.916.328-1.414.388.509-.305.898-.787 1.083-1.362-.476.282-1.003.487-1.564.597-.448-.479-1.089-.778-1.796-.778-1.59 0-2.758 1.483-2.399 3.023-2.045-.103-3.86-1.083-5.074-2.572-.645 1.106-.334 2.554.762 3.287-.403-.013-.782-.124-1.114-.308-.027 1.14.791 2.207 1.975 2.445-.346.094-.726.116-1.112.042.313.978 1.224 1.689 2.3 1.709-1.037.812-2.34 1.175-3.647 1.021 1.09.699 2.383 1.106 3.773 1.106 4.572 0 7.154-3.861 6.998-7.324.482-.346.899-.78 1.229-1.274z"/></svg></a>
+                        <a class="svg-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-.008 14.408c1.299 0 2.354-1.056 2.354-2.354 0-.704-.312-1.337-.803-1.769-.174-.151-.368-.278-.58-.374-.297-.135-.625-.21-.971-.21-.347 0-.675.075-.971.21-.211.096-.406.223-.578.374-.492.432-.805 1.064-.805 1.769.001 1.298 1.057 2.354 2.354 2.354zm.008-4.093c.961 0 1.738.778 1.738 1.739 0 .961-.777 1.74-1.738 1.74s-1.738-.779-1.738-1.74c0-.96.777-1.739 1.738-1.739zm2.611.185h3.389v5.139c0 1.304-1.058 2.361-2.361 2.361h-7.246c-1.305 0-2.393-1.057-2.393-2.361v-5.139h3.373c-.271.457-.436.985-.436 1.554 0 1.688 1.367 3.055 3.055 3.055 1.687 0 3.055-1.368 3.055-3.055 0-.569-.164-1.097-.436-1.554zm1.028-4.5h-6.139v2.5h-.5v-2.5h-.5v2.5h-.5v-2.461c-.174.028-.341.071-.5.134v2.327h-.5v-2.051c-.602.428-1 1.123-1 1.912v1.639h3.736c.584-.642 1.399-1 2.256-1 .86 0 1.675.362 2.255 1h3.753v-1.64c0-1.303-1.058-2.36-2.361-2.36zm1.361 2.632c0 .203-.166.368-.373.368h-1.255c-.205 0-.372-.165-.372-.368v-1.265c0-.202.167-.367.372-.367h1.255c.207 0 .373.165.373.367v1.265z"/></svg></a>
+                    </div>  <!--end icon social-->
+            </div>
+
+            <div class="about__item">
+                <div class="about__photo">
+                    <img src="images/about_desmond.jpg" alt="Desmond Miles">
+                </div>
+                <div class="about__text">
+                    <a class="about__name" href="#"><h3>Desmond Miles</h3></a>
+                    <p class="section__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
+                </div>
+                <div class="social social--order">
+                    <a class="svg-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/></svg></a>
+                    <a class="svg-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.5 11.5v1.2h1.985c-.08.514-.601 1.51-1.985 1.51-1.194 0-2.17-.99-2.17-2.21s.976-2.21 2.17-2.21c.681 0 1.135.29 1.396.541l.949-.916c-.61-.57-1.401-.915-2.345-.915-1.936 0-3.5 1.565-3.5 3.5s1.564 3.5 3.5 3.5c2.02 0 3.359-1.419 3.359-3.419 0-.23-.024-.405-.055-.58h-3.304zm0 0 8.5 1h-1.5v1.5h-1v-1.5h-1.5v-1h1.5v-1.5h1v1.5h1.5v1z"/></svg></a>
+                    <a class="svg-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.5 8.778c-.441.196-.916.328-1.414.388.509-.305.898-.787 1.083-1.362-.476.282-1.003.487-1.564.597-.448-.479-1.089-.778-1.796-.778-1.59 0-2.758 1.483-2.399 3.023-2.045-.103-3.86-1.083-5.074-2.572-.645 1.106-.334 2.554.762 3.287-.403-.013-.782-.124-1.114-.308-.027 1.14.791 2.207 1.975 2.445-.346.094-.726.116-1.112.042.313.978 1.224 1.689 2.3 1.709-1.037.812-2.34 1.175-3.647 1.021 1.09.699 2.383 1.106 3.773 1.106 4.572 0 7.154-3.861 6.998-7.324.482-.346.899-.78 1.229-1.274z"/></svg></a>
+                    <a class="svg-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-.008 14.408c1.299 0 2.354-1.056 2.354-2.354 0-.704-.312-1.337-.803-1.769-.174-.151-.368-.278-.58-.374-.297-.135-.625-.21-.971-.21-.347 0-.675.075-.971.21-.211.096-.406.223-.578.374-.492.432-.805 1.064-.805 1.769.001 1.298 1.057 2.354 2.354 2.354zm.008-4.093c.961 0 1.738.778 1.738 1.739 0 .961-.777 1.74-1.738 1.74s-1.738-.779-1.738-1.74c0-.96.777-1.739 1.738-1.739zm2.611.185h3.389v5.139c0 1.304-1.058 2.361-2.361 2.361h-7.246c-1.305 0-2.393-1.057-2.393-2.361v-5.139h3.373c-.271.457-.436.985-.436 1.554 0 1.688 1.367 3.055 3.055 3.055 1.687 0 3.055-1.368 3.055-3.055 0-.569-.164-1.097-.436-1.554zm1.028-4.5h-6.139v2.5h-.5v-2.5h-.5v2.5h-.5v-2.461c-.174.028-.341.071-.5.134v2.327h-.5v-2.051c-.602.428-1 1.123-1 1.912v1.639h3.736c.584-.642 1.399-1 2.256-1 .86 0 1.675.362 2.255 1h3.753v-1.64c0-1.303-1.058-2.36-2.361-2.36zm1.361 2.632c0 .203-.166.368-.373.368h-1.255c-.205 0-.372-.165-.372-.368v-1.265c0-.202.167-.367.372-.367h1.255c.207 0 .373.165.373.367v1.265z"/></svg></a>
+                </div>
+            </div>
+
+            <div class="about__item">
+                <div class="about__photo">
+                    <img src="images/about_scolara.jpg" alt="Scolara Visavi">
+                </div>
+                <div class="about__text">
+                    <a class="about__name" href="#"><h3>Scolara Visavi</h3></a>
+                    <p class="section__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
+                </div>
+                        <div class="social social--order">
+                        <a class="svg-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/></svg></a>
+                        <a class="svg-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.5 11.5v1.2h1.985c-.08.514-.601 1.51-1.985 1.51-1.194 0-2.17-.99-2.17-2.21s.976-2.21 2.17-2.21c.681 0 1.135.29 1.396.541l.949-.916c-.61-.57-1.401-.915-2.345-.915-1.936 0-3.5 1.565-3.5 3.5s1.564 3.5 3.5 3.5c2.02 0 3.359-1.419 3.359-3.419 0-.23-.024-.405-.055-.58h-3.304zm0 0 8.5 1h-1.5v1.5h-1v-1.5h-1.5v-1h1.5v-1.5h1v1.5h1.5v1z"/></svg></a>
+                        <a class="svg-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.5 8.778c-.441.196-.916.328-1.414.388.509-.305.898-.787 1.083-1.362-.476.282-1.003.487-1.564.597-.448-.479-1.089-.778-1.796-.778-1.59 0-2.758 1.483-2.399 3.023-2.045-.103-3.86-1.083-5.074-2.572-.645 1.106-.334 2.554.762 3.287-.403-.013-.782-.124-1.114-.308-.027 1.14.791 2.207 1.975 2.445-.346.094-.726.116-1.112.042.313.978 1.224 1.689 2.3 1.709-1.037.812-2.34 1.175-3.647 1.021 1.09.699 2.383 1.106 3.773 1.106 4.572 0 7.154-3.861 6.998-7.324.482-.346.899-.78 1.229-1.274z"/></svg></a>
+                        <a class="svg-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-.008 14.408c1.299 0 2.354-1.056 2.354-2.354 0-.704-.312-1.337-.803-1.769-.174-.151-.368-.278-.58-.374-.297-.135-.625-.21-.971-.21-.347 0-.675.075-.971.21-.211.096-.406.223-.578.374-.492.432-.805 1.064-.805 1.769.001 1.298 1.057 2.354 2.354 2.354zm.008-4.093c.961 0 1.738.778 1.738 1.739 0 .961-.777 1.74-1.738 1.74s-1.738-.779-1.738-1.74c0-.96.777-1.739 1.738-1.739zm2.611.185h3.389v5.139c0 1.304-1.058 2.361-2.361 2.361h-7.246c-1.305 0-2.393-1.057-2.393-2.361v-5.139h3.373c-.271.457-.436.985-.436 1.554 0 1.688 1.367 3.055 3.055 3.055 1.687 0 3.055-1.368 3.055-3.055 0-.569-.164-1.097-.436-1.554zm1.028-4.5h-6.139v2.5h-.5v-2.5h-.5v2.5h-.5v-2.461c-.174.028-.341.071-.5.134v2.327h-.5v-2.051c-.602.428-1 1.123-1 1.912v1.639h3.736c.584-.642 1.399-1 2.256-1 .86 0 1.675.362 2.255 1h3.753v-1.64c0-1.303-1.058-2.36-2.361-2.36zm1.361 2.632c0 .203-.166.368-.373.368h-1.255c-.205 0-.372-.165-.372-.368v-1.265c0-.202.167-.367.372-.367h1.255c.207 0 .373.165.373.367v1.265z"/></svg></a>
+                        </div>
+            </div>
+        </div>
+    </div>  <!--end section about-->
+    
+    <div class="section bg--brand quote">
+        <h2 class="section__title">Get a Quote</h2>
+        
+        <div class="section__subtitle">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+        </div>
+        
+        <div class="contacts">
+            <form class="contacts__form form">
+                <input class="form__input" type="text" placeholder="Name (Reguired)" name="name" required>
+                <input class="form__input" type="email" placeholder="Email (Reguired)" name="email" required>
+                <input class="form__input" type="text" placeholder="Subject" name="subject">
+                <textarea class="form__input" placeholder="Describe your project in detail..." name="describe" rows="10"></textarea>
+            </form>
+
+            <div class="address">
+                <h3 class="address__title">Contact Information</h3>
+                <p class="address__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
+                <ul class="address__list">
+                    <li><span class="address__mark"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 14c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"/></svg></span>St. 14/05 Lost City</li>
+                    <li><span class="address__mark"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"/></svg></span>331 86 35</li>
+                    <li><span class="address__mark"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg></span>info@singolo.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>  <!--end section quote-->
+
+    <footer class="footer bg--dark">
+        <div class="footer__copyright">
+            <p>&copy; Copyright 2013 by <a>&nbsp;PSDchat.com</a></p>
+        </div>
+        <div class="social">
+            <a class="svg-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/></svg></a>
+            <a class="svg-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.5 11.5v1.2h1.985c-.08.514-.601 1.51-1.985 1.51-1.194 0-2.17-.99-2.17-2.21s.976-2.21 2.17-2.21c.681 0 1.135.29 1.396.541l.949-.916c-.61-.57-1.401-.915-2.345-.915-1.936 0-3.5 1.565-3.5 3.5s1.564 3.5 3.5 3.5c2.02 0 3.359-1.419 3.359-3.419 0-.23-.024-.405-.055-.58h-3.304zm0 0 8.5 1h-1.5v1.5h-1v-1.5h-1.5v-1h1.5v-1.5h1v1.5h1.5v1z"/></svg></a>
+            <a class="svg-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.5 8.778c-.441.196-.916.328-1.414.388.509-.305.898-.787 1.083-1.362-.476.282-1.003.487-1.564.597-.448-.479-1.089-.778-1.796-.778-1.59 0-2.758 1.483-2.399 3.023-2.045-.103-3.86-1.083-5.074-2.572-.645 1.106-.334 2.554.762 3.287-.403-.013-.782-.124-1.114-.308-.027 1.14.791 2.207 1.975 2.445-.346.094-.726.116-1.112.042.313.978 1.224 1.689 2.3 1.709-1.037.812-2.34 1.175-3.647 1.021 1.09.699 2.383 1.106 3.773 1.106 4.572 0 7.154-3.861 6.998-7.324.482-.346.899-.78 1.229-1.274z"/></svg></a>
+            <a class="svg-icon" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-.008 14.408c1.299 0 2.354-1.056 2.354-2.354 0-.704-.312-1.337-.803-1.769-.174-.151-.368-.278-.58-.374-.297-.135-.625-.21-.971-.21-.347 0-.675.075-.971.21-.211.096-.406.223-.578.374-.492.432-.805 1.064-.805 1.769.001 1.298 1.057 2.354 2.354 2.354zm.008-4.093c.961 0 1.738.778 1.738 1.739 0 .961-.777 1.74-1.738 1.74s-1.738-.779-1.738-1.74c0-.96.777-1.739 1.738-1.739zm2.611.185h3.389v5.139c0 1.304-1.058 2.361-2.361 2.361h-7.246c-1.305 0-2.393-1.057-2.393-2.361v-5.139h3.373c-.271.457-.436.985-.436 1.554 0 1.688 1.367 3.055 3.055 3.055 1.687 0 3.055-1.368 3.055-3.055 0-.569-.164-1.097-.436-1.554zm1.028-4.5h-6.139v2.5h-.5v-2.5h-.5v2.5h-.5v-2.461c-.174.028-.341.071-.5.134v2.327h-.5v-2.051c-.602.428-1 1.123-1 1.912v1.639h3.736c.584-.642 1.399-1 2.256-1 .86 0 1.675.362 2.255 1h3.753v-1.64c0-1.303-1.058-2.36-2.361-2.36zm1.361 2.632c0 .203-.166.368-.373.368h-1.255c-.205 0-.372-.165-.372-.368v-1.265c0-.202.167-.367.372-.367h1.255c.207 0 .373.165.373.367v1.265z"/></svg></a>
+        </div>
+    </footer> <!--end footer-->
+
+    
+    <script>
+        $(function(){
+            $('.button__hamburger').on('click', function(){
+                $('.nav').slideToggle(100, function(){
+                    if($(this).css('display') === 'none'){
+                    $(this).removeAttr('style');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

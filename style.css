@@ -109,12 +109,11 @@ p {
   margin: 0;
 }
 
-.article {
-  margin-bottom: 30px;
-}
-
 .article__item {
-  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .article__text {
@@ -141,7 +140,8 @@ p {
   }
 
   .article {
-    width: calc(100% / 2 - 10px);
+    display: flex;
+    gap: 50px;
   }
 }
 

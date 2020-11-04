@@ -42,10 +42,6 @@ body {
   color: var(--primary-color);
 }
 
-h1, h2, h3 {
-  font-family: 'Alegreya Sans SC', sans-serif;
-}
-
 p {
   margin: 0;
 }
@@ -59,20 +55,26 @@ p {
   border-bottom: 1px solid var(--brand-color);
 }
 
+.header__logo {
+  text-align: center;
+  margin: 0;
+}
+
+.header__logo small {
+  display: block;
+}
+
 .section {
   border-bottom: 1px solid var(--brand-color);
 }
 
-.section__item {
+.section__inner {
   padding: 0 15px;
 }
 
 .logo {
-  text-align: center;
   color: var(--brand-color);
-  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
   font-size: var(--lg);
-  margin: 0;
 }
 
 .contacts {

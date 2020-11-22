@@ -62,6 +62,7 @@ p {
 
 .header__logo small {
   display: block;
+  font-size: var(--sm);
 }
 
 .section {

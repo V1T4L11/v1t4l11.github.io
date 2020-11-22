@@ -1,0 +1,148 @@
+:root {
+  --error-color: #dc3545;
+  --succes-color: #28a745;
+  --warning-color: #ffc107;
+  --black-color: #000000;
+  --white-color: #fff;
+  --blue-color: #2196F3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  color: var(--black-color);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.centred {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.night-mode {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  align-items: baseline;
+}
+
+.night-mode__inner {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.night-mode__label {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 34px;
+}
+
+.night-mode__label input {
+  display: none;
+}
+
+.night-mode__text {
+  display: inline-block;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--white-color);
+  border-radius: 34px;
+  border: 1px solid var(--black-color);
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 50px;
+  left: 3px;
+  bottom: 3px;
+  border-radius: 26px;
+  background-color: var(--black-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--black-color);
+  border-color: var(--white-color);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--blue-color);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(42px);
+  background-color: var(--white-color);
+}
+
+.form {
+  padding: 50px;
+}
+
+.form__h1 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.form-field + .form-field {
+  margin-top: 20px;
+}
+
+.form-field.error input {
+  border-color: var(--error-color);
+}
+
+.form-field.success input {
+  border-color: var(--success-color);
+}
+
+.form-field small {
+  border-color: var(--error-color);
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: var(--blue-color);
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--white-color);
+}
+
+.btn:hover {
+  background: var(--succes-color);
+  cursor: pointer;
+}

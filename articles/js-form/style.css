@@ -15,6 +15,10 @@
 
 .body {
   color: var(--black-color);
+  width: 100%;
+}
+
+.body__inner {
   max-width: 700px;
   margin: 0 auto;
 }

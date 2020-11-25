@@ -7,45 +7,46 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="body">
-  <main class="main centred">
-    <div class="night-mode night-mode__inner">
-      <label class="night-mode__label">
-        <input type="checkbox" name="" id="checkNightMode">
-        <span class="slider"></span>
-      </label>
-      <p class="night-mode__text">Night mode: <span class="night-mode__text-set">OFF</span></p>
-    </div>
+  <div class="body__inner">
+    <main class="main centred">
+      <div class="night-mode night-mode__inner">
+        <label class="night-mode__label">
+          <input type="checkbox" name="" id="checkNightMode">
+          <span class="slider"></span>
+        </label>
+        <p class="night-mode__text">Night mode: <span class="night-mode__text-set">OFF</span></p>
+      </div>
 
-    <div class="form centred">
-      <form id="signup" class="form-signup">
+      <div class="form centred">
+        <form id="signup" class="form-signup">
 
-        <h1 class="form__h1">Please check the form:</h1>
+          <h1 class="form__h1">Please check the form:</h1>
 
-        <div class="form-field">
-          <label class="form__label" for="username">Name</label>
-          <input class="form__input" type="text" name="username" id="username" autocomplete="off" placeholder="Igor Ten">
-          <small></small>
-        </div>
+          <div class="form-field">
+            <label class="form__label" for="username">Name</label>
+            <input class="form__input" type="text" name="username" id="username" autocomplete="off" placeholder="Igor Ten">
+            <small></small>
+          </div>
 
-        <div class="form-field">
-          <label class="form__label" for="email">E-mail</label>
-          <input class="form__input" type="email" name="email" id="email" autocomplete="off" placeholder="email@adress.com">
-          <small></small>
-        </div>
+          <div class="form-field">
+            <label class="form__label" for="email">E-mail</label>
+            <input class="form__input" type="email" name="email" id="email" autocomplete="off" placeholder="email@adress.com">
+            <small></small>
+          </div>
 
-        <div class="form-field">
-          <label class="form__label" for="phone">Phone</label>
-          <input class="form__input" type="tel" name="phone" id="phone"  autocomplete="off" placeholder="+38012 345 67 89">
-          <small></small>
-        </div>
+          <div class="form-field">
+            <label class="form__label" for="phone">Phone</label>
+            <input class="form__input" type="tel" name="phone" id="phone"  autocomplete="off" placeholder="+38012 345 67 89">
+            <small></small>
+          </div>
 
-        <div class="form-field">
-          <input class="btn form__submit" type="submit" value="form">
-        </div>
-      </form>
-    </div>
-  </main>
-
+          <div class="form-field">
+            <input class="btn form__submit" type="submit" value="form">
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
   <script src="js-nightMode.js"></script>
   <script src="js-form.js"></script>
 </body>

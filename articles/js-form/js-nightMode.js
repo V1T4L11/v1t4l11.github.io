@@ -2,6 +2,13 @@ const html = document.querySelector('.body');
 const getCheckbox = document.getElementById('checkNightMode');
 const setText = document.querySelector('.night-mode__text-set');
 
+function cssVar(name,value){
+  if(name[0]!='-') name = '--'+name
+  if(value) document.documentElement.style.setProperty(name, value)
+  return getComputedStyle(document.documentElement).getPropertyValue(name);
+}
+
+
 getCheckbox.addEventListener('change', e => {
 
   let choice = e.target.checked;
@@ -10,12 +17,12 @@ getCheckbox.addEventListener('change', e => {
   let textContentMode;
 
   if (choice == true) {
-    bgColor = '#000000';
-    textColor = '#fff';
+    bgColor = cssVar('black-color');
+    textColor = cssVar('white-color');
     textContentMode = 'ON';
   } else {
-    bgColor = '#fff';
-    textColor = '#000000';
+    bgColor = cssVar('white-color');
+    textColor = cssVar('black-color');
     textContentMode = 'OFF';
   }
 

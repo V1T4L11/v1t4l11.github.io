@@ -1,6 +1,6 @@
 const html = document.querySelector('.body');
 const getCheckbox = document.getElementById('checkNightMode');
-const setText = document.querySelector('.night-mode__text-set');
+const setText = document.querySelector('.night-mode__text');
 
 
 function cssVar(name,value){
@@ -34,5 +34,5 @@ getCheckbox.addEventListener('change', e => {
 function update(bgColor, textColor, textContentMode) {
     html.style.backgroundColor = bgColor;
     html.style.color = textColor;
-    setText.textContent = textContentMode;
+    setText.textContent = `Night mode: ${textContentMode}`;
 }

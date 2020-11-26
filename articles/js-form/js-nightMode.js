@@ -2,6 +2,7 @@ const html = document.querySelector('.body');
 const getCheckbox = document.getElementById('checkNightMode');
 const setText = document.querySelector('.night-mode__text-set');
 
+
 function cssVar(name,value){
   if(name[0]!='-') name = '--'+name
   if(value) document.documentElement.style.setProperty(name, value)
@@ -28,6 +29,7 @@ getCheckbox.addEventListener('change', e => {
 
   update(bgColor, textColor, textContentMode);
 })
+
 
 function update(bgColor, textColor, textContentMode) {
     html.style.backgroundColor = bgColor;

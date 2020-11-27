@@ -95,19 +95,7 @@ const checkPhone = () => {
   return valid;
 }
 
-const debounce = (fn, delay = 500) => {
-  let timeoutId;
-  return (...args) => {
-      if (timeoutId) {
-          clearTimeout(timeoutId);
-      }
-      timeoutId = setTimeout(() => {
-          fn.apply(null, args)
-      }, delay);
-  };
-};
-
-form.addEventListener('input', debounce(function (e) {
+form.addEventListener('input', function (e) {
   switch (e.target.id) {
     case 'username':
       checkUsername();
@@ -119,4 +107,4 @@ form.addEventListener('input', debounce(function (e) {
       checkPhone();
       break;
   }
-}));
+});

@@ -84,6 +84,38 @@ const checkPhone = () => {
   let valid = false;
   const phone = userphoneEl.value.trim();
 
+//   phone.onclick = function() {
+//     phone.value = "+";
+//   }
+
+// var old = 0;
+
+// phone.onkeydown = function() {
+//     var curLen = phone.value.length;
+    
+//     if (curLen < old){
+//       old--;
+//       return;
+//       }
+    
+//     if (curLen == 2) 
+//     	phone.value = phone.value + "(";
+      
+//     if (curLen == 6)
+//     	phone.value = phone.value + ")-";
+      
+//      if (curLen == 11)
+//     	phone.value = phone.value + "-"; 
+      
+//      if (curLen == 14)
+//     	phone.value = phone.value + "-";  
+      
+//      if (curLen > 16)
+//     	phone.value = phone.value.substring(0, phone.value.length - 1);
+      
+//      old++;
+// }
+
   if (!isRequired(phone)) {
     showError(userphoneEl, 'Phone number cannot be blank.');
   } else if (!isPhoneValid(phone)) {
@@ -94,6 +126,7 @@ const checkPhone = () => {
   }
   return valid;
 }
+
 
 form.addEventListener('input', function (e) {
   switch (e.target.id) {

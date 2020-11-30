@@ -1,0 +1,13 @@
+.btn-primary {
+    background-color: #ff7f50;
+    border-color: #ff7f50;
+}
+
+.btn-primary:hover {
+    background-color: #ff9d79;
+    border-color: #ff9d79;
+}
+
+.btn-nav {
+    border-radius: 0;
+}

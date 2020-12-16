@@ -24,7 +24,7 @@ function showFigure() {
 
   randFigure.classList.add('visible');
   randFigure.style.left = randomPositionX + '%';
-  randFigure.style.bottom = randomPositionY + '%';
+  randFigure.style.top = randomPositionY + '%';
 
   randFigure.addEventListener('click', disappear);
 }
